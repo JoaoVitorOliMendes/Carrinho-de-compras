@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Carrinho-de-compras</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/stilus.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap.min.css'>
+</head>
+<body class="body">
+    <div class="container-fluid pb-5 pt-5">
+        <div class="row">
+
+            <div class="col-lg-6 p-5">
+                <form id="adicionar" class="pb-5">
+                    <div class="form-group row d-flex justify-content-center">
+                        <div class="col-lg-12 text-center">
+                            <span class="h1">Adicionar Produtos</span>
+                        </div>
+                        <div class="col-lg-6 p-5 d-flex justify-content-center align-content-center flex-wrap">
+                            <label for="addproduct" class="h4">Novo item</label>
+                            <input type="text" required class="form-control" placeholder="Produto" name="addproduct" id="addproduct">
+                        </div>
+                        <div class="col-lg-6 p-5 d-flex justify-content-center align-content-center flex-wrap">
+                            <label for="addquant" class="h4">Quantidade</label>
+                            <input type="number" required class="form-control" placeholder="Quantidade" name="addquant" id="addquant">
+                        </div>
+                        <button class="btn btn-primary col-lg-6" type="submit">Adicionar</button>
+                    </div>
+                </form>
+                <form id="update" class="pt-5">
+                    <div class="form-group row d-flex justify-content-center">
+                        <div class="col-lg-12 text-center">
+                            <span class="h1">Pesquisar e Editar Produtos</span>
+                        </div>
+                        <div class="col-lg-3 p-3 pb-5 pt-5 d-flex justify-content-center align-content-center flex-wrap">
+                            <label for="editproductId" class="h4">ID</label>
+                            <input type="number" required class="form-control" placeholder="Id" name="editproductId" id="editproductId" min="1">
+                        </div>
+                        <div class="col-lg-4 p-3 pb-5 pt-5 d-flex justify-content-center align-content-center flex-wrap">
+                            <label for="editproduct" class="h4">Editar item</label>
+                            <input type="text" class="form-control" placeholder="Produto" name="editproduct" id="editproduct">
+                        </div>
+                        <div class="col-lg-4 p-3 pb-5 pt-5 d-flex justify-content-center align-content-center flex-wrap">
+                            <label for="editquant" class="h4">Quantidade</label>
+                            <input type="number" class="form-control" placeholder="Quantidade" name="editquant" id="editquant">
+                        </div>
+                        <button class="btn btn-success col-lg-6" type="submit">Editar</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-lg-6 p-5">
+                <table class="table border">
+                    <thead>
+                      <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Produto</th>
+                        <th scope="col">Quantidade</th>
+                        <th scope="col">Botão LOL</th>
+                      </tr>
+                    </thead>
+
+                    <tbody id="tableBody">
+                      
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+    </div>
+<script src='main.js'></script>
+</body>
+</html>
